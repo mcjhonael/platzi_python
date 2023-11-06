@@ -1,0 +1,113 @@
+print(A//B) =>solo parte entera
+print(A/B) => parte entera y decimal
+print(A**B)=> la potencia
+math.sqrt(result) para ello hay que import math de alli cogemos su metodo sqrt y saca raiz
+para escribir palabras tienes que poner palabra_palabra
+cualquier tipode datos es considerado un objeto en python
+las '' es para escribir texto
+las " " para declarar variables
+el + para concaquetar string
+puedo multiplicar texto con numero y dara nro de repeticiones de ese numero
+input("") => ingresar valores
+convertir de string a int seria colocarlo int()  convertir number a string str() float()
+operadores and | or 
+== para comparacion != diferente
+round(number,cant_decimal) 
+la funcion debe estar antes para luego poder llamarla
+
+
+
+******** estructuras d control *******
+if condicion:
+elif condicion2:
+else:
+
+***** funciones(no repitir codigo) ******
+
+***** metodos de cadenas *****
+
+-nombre.lower() =>miniscula todo
+-nombre.capitalize() => el 1er letra mayusculas
+-nombre.strip()=> elimina espacio start y end
+-nombre=nombre.strip() => podemos reemplazar una varible altoke
+-nombre.replace('o','a') =>reemplaza de todo el nombre x lo que quieras | todas las O por las A
+-nombre[0]=> obtener letra x el indice
+-len(nombre) =>recibe un string|variable|array y te da l cantidad
+-utilizando los slices =>revanada de pan trozo de codigo en cadenas 
+-nombre[inicio:final-1:saltos]=>para revanar string
+-nombre[::-1]=>invertido el string
+
+
+
+********** CAMBIO DE MODO DE TRABAJO ****************
+# en python siempre hay que inciar con una funcion 
+def run():
+    pass
+# el entry point del programa
+#el punto de entrada de un programa de python cuando ent
+ra al if todo lo que esta adentro se va ejecutar
+  if __name__ == '__main__':
+# aqui corre la funcion declarada antes
+      run()
+
+
+
+************* CICLO FOR *************
+for item in range(final-1): (position,final) range solo mostrar valores desde un rango nada mas no array
+for letra in nombre: //sirve para recorrer un array de caracteres
+-para cortar o continuar en un ciclo mas que todo (break continue)
+-continue no se ejecuta lo q esta abajo por ese momento del ciclo si no salta al otro ciclo
+-break corta a la primera que encuentra y termina el ciclo
+
+
+
+******** JUEGO ADIVINAR QUE NUMERO PENSO LA MAQUINA ***************
+-numero = random.randrange(10) => del 0 - 10 x defecto
+-numero = random.randrange(10,20) opcional dandole rangos
+-numero =random.choice(['tito','solana','agus']) => escoge uno de los 3 aleatoriamente 
+
+
+
+*********** listas == arraglogs ********
+numero=[2,3,4]
+numero[0] => acceder al 1r elemento en position 0
+numero.append(23) ==> agregar al final de la list ese valor 23
+numero.pop(1) => madar la posicion a eliminar del elemento no valor
+numero.pop() => eliminar el ultimo elemento 
+numero.remove('str')=elimina el 1ro que conincida dentro de la list 
+numero.reverse()=cambia la lista alrevez
+numeros.sort()=ordena de menor a mayor
+for num in numero: => recorrer una list
+podemos usar los slices en los arreglo
+nombre[::-1] datos al revez
+podemos unir arreglos con el +
+nombre.clear()=vacia el arreglo
+nombre.extends(nombre2) = une la lista 1 con la 2 en una list en 1
+nombre.index('str') = en k indice se encuentra la palabra
+
+
+******** metodos de las listas ************
+nombre.title() =>coloca en mayusculas la 1ra de una oracion (solo srt)
+nombre.count(list|str) =>busca dentro de nombre alguna coincidencia 
+nombre.find('a') =return position donde esta 0-n (str) si no -1
+nombre.rfind('a') =return position donde esta n-0 (str) si no -1
+
+
+
+********** tuplas *********
+solo se puedes mostrar como un arreglo 
+no add no pop
+tuplas=('hola','pacola')
+
+
+
+******** DICCIONARIOS == JSON*******
+-for datos in datos_personales.keys(): // recorrer un diccionaro con clave keys() o values()
+-for datos in datos_personales.values(): // obtenemos los valores
+-for datos,valores in datos_personas.items(): //obtenemos lo valores es mas completo esto
+-join convierte una lista en una cadena string nombre="delimitador".join(lista_convertir) como queremos juntarlo con , : vacio delimitador como queremos juntarlo con o sin epacio
+-split => convierte un conjunto de cadnas en una lista 
+nombre=nombre.split() tambien tiene delimitador .split(sep=',')
+colores.get('clave','no hay') =busca un elemento por su clave y return el valor
+colores.pop('clave','no hay') =busca un elemento por su clave y elimina el valor
+colores.clear() 

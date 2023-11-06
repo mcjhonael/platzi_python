@@ -1,0 +1,61 @@
+---- Inicio de Django ----
+
+- tener una objetoResquest y un  objResponse para cada peticion
+
+1. preparar el entorno virtual para Django
+    ## Verificación de la descarga
+
+    1. Correr `python3 --version`
+    2. Correr `pip3 --version`
+
+    ## Entorno virtual
+
+    1. Correr `python3 -m venv ENTORNO` donde `ENTORNO` sea el nombre deseado
+    2. Correr `source ENTORNO/bin/activate` para activar el entorno
+    3. Correr `deactivate` para desactivar el entorno
+
+    ## Instalación de django
+
+    1. Activar entorno virtual
+    2. Correr `pip install django -U`
+    3. modulos instalados en el entorno virtual (django-freeze)
+    4. django-admin startproject platzigram . () cuando colocas el punto eso quiere decir que no debe crear doble carpeta si no que lo cree en el mismo pack donde nos encontramos
+
+--- descripcion de instalar startproject ---
+  1. el archo __init__ lo que hace es declarar platzigram como un modulo de python
+  2. setting = tiene toda la configuracion de python muy importante
+  3. url = es el punto de entrada de nuestra aplicacion para todas nuestras peticiones su funcion importante es que va buscar la url y va mandar la vista que corresponde a esa url 
+  4. wsgi = archivo para el deploy de nuestra aplicacion
+  5. manage = archivo que nunca vamos a tocar pero que si vamos a interacutar con todo el desarrollo crea una interfaz sobre el django-admin
+
+++++++ DESCRIPCION DEL SETTINGS ++++++++++
+
+  BASE_DIR= lugar donde esta corriendo nuestro proyecto
+  SECRET_KEY= se usa para el jachin de las contrasenas
+  DEBUG=True quiere decir que estas modo desarrollo para produccion false
+  ALLOWED_HOSTS = que host estan permitidos para interacctuar con nuestro proyecto
+  INSTALLED_APPS = applicaciones instaladas en nuestro proyecto django instala automaticamente estas aplicacones (app admin , auth, contenttype,messages,staticfiles)
+  MIDDLEWARE= 
+  ROOT_URLCONF= aqui definimos el archivos principales de las url modulo de entrada de las url con esta variable
+  DATABASES= por defecto manda sqlite3 pero podemos cambiar colocando nuestras q credenciales 
+  AUTH_PASSWORD_VALIDATORS= si estamos usando el aplicacion de autenticacion nuestras contrasenias  va pasar por esta variable que tiene las validaciones y no validar super genial puedo crear mis propios validadores y agregarlo 
+  STATIC_URL= guardar los archivos estaticos
+
+  para interactuar con el manage python manage.py esto nos brindara los comandos de cada aplicacion que hemos visto como auth, contenttype, django, etc 
+  el comando que nos interesa es el staticfiles que es el runserver
+
+  python manage.py runserver = con esto corre nuestro projecto general 
+
+  ********* ya empezando ****
+  1- una vista en django es una function o una clase
+  2- toda funcion recibe un request
+  3- para mandar una respuesta usamos el modulo HttpResponse
+  4- el objetoHttpResquest es una instancia del objResquest
+
+
+
+
+
+  +++++ creando nuestra primera applicacion con django ++++++++++
+  - python manage.py startapp name_app
+  

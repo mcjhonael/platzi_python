@@ -1,0 +1,67 @@
+- el zend de python=principios para poder escribir codigo python cmd>python - import this y alli sale todo
+
+- py -m venv venv =>crear un entorno con name venv
+
+
+-source venv/Script/activate =>activar el entorno virtual
+
+-deactivate =>para salir del entorno virtual
+
+
+- para colocar un alias en el cmder = alias avenv=.\venv\Scripts\activate y ahora solo colocar avenv y entras
+
+
+-pip freeze => que modulos hemos instalador aqui en nuestro entorno virtual
+
+
+-pip freeze > requirements.txt = dentro de este doc guardara todo lo instaldo en el entorno para otros puedann correr el programa y asi no tener problemas con las versiones
+
+
+- pip install -r requirements.txt =descargar todos los paquetes con su version en este entorno para poder correr el proyecto
+
+
+-cat archivo.txt = podemos ver que hay adentro
+
+
+***** LISTAS Y DICCIONARIOS ANIDADOS ********
+- si dentro de las listas hay un diccionarios entonces 1ro armas el list y adentro por cada lista vas a mostrar otro for para los arreglos
+- lo de arriba invertido
+
+********** list comprenhensions*********
+# squares=[i**2 for i in range(1,101) if i%3!=0]//necesito for s/n if
+
+***** dicc comprenhensions **********
+# dicc={i:i**2 for i in range(1,101) if i%3!=0}//necesito for s/n if
+
+
+- funciones anonimas(lambda) funciones que no tienes un numero no identificador
+lambda argumentos: expresion
+
+
+************ funcion de orden superior **********
+- es una funcion que recibe otra funcion como parametro y que lo invoca y ya.
+- filter()
+- map()
+- reduce ()
+
+
+************ MANEJO DE EXCEPCIONES ********************
+try
+except
+probar | excepto hago lo siguient
+
+
+finally para cerrar archivos cerrar base de conexiones de base de datos 
+
+
+****** MANEJADORES DE ARCHIVOS ********
+
+archvos binarios jpg mp3 mp4 archivos de audio o video
+archivos de texto
+mdo de escritura 
+R => de lectura
+w => de escritura (sobre escribe al anterior)
+A => de escritura(agrega al final)
+
+with manejador contextual
+with open('ruta',modo de escritura) as f:
